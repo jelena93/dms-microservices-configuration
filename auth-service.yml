@@ -5,7 +5,7 @@ security:
   sessions: never
 spring:
   application:
-      name: uaa-service
+      name: auth-service
   jpa:
     show_sql: true
     format_sql: true
