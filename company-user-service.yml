@@ -31,7 +31,7 @@ security:
     client:
     resource:
       loadBalanced: true
-      userInfoUri: http://uaa-service/uaa/user
+      userInfoUri: http://auth-service/uaa/user
       preferTokenInfo: false
   sessions: NEVER
 eureka:
