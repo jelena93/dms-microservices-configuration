@@ -3,7 +3,7 @@ server:
 add-to-db: true
 spring:
   application:
-    name: company-user-service
+    name: company-service
   jpa:
     show_sql: true
     format_sql: true
