@@ -36,7 +36,7 @@ security:
       clientId: descriptor-service
       clientSecret: descriptor-service-secret
     resource:
-      userInfoUri: http://localhost:9999/uaa/user
+      userInfoUri: http://auth-service/uaa/user
       preferTokenInfo: false
   sessions: NEVER
 eureka:
