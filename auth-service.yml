@@ -29,6 +29,7 @@ spring:
       bindings:
         userAddedInput:
           destination: userAddedInput
+          group: userAddedGroup
 eureka:
   instance:
       hostname: localhost
