@@ -1,6 +1,6 @@
 server:
   port: 8083
-add-to-db: true
+addToDb: true
 spring:
   application:
     name: descriptor-service

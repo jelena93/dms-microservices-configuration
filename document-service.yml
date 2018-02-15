@@ -31,9 +31,9 @@ eureka:
 elasticsearch:
   host: localhost
   port: 9300
-  pipeline:
-    name: attachment
-  index:
-    name: documents
-  type:
-    name: documents
+  clusterName: elasticsearch
+  indexName: documents
+  typeName: documents
+  numberOfShards: 1
+  numberOfReplicas: 0
+  pipelineName: attachment

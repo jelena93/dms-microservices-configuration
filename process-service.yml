@@ -1,6 +1,6 @@
 server:
   port: 8082
-add-to-db: true
+addToDb: true
 spring:
   application:
     name: process-service
