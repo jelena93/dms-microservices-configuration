@@ -18,6 +18,7 @@ security:
       clientId: document-service
       clientSecret: document-service-secret
     resource:
+      loadBalanced: true
       userInfoUri: http://auth-service/uaa/user
       preferTokenInfo: false
   sessions: NEVER
