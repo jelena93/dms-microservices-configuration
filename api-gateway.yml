@@ -35,5 +35,5 @@ security:
       loadBalanced: true
       userInfoUri: http://auth-service/uaa/user
       preferTokenInfo: false
-  security:
-    sessions: never
+#  security:
+#    sessions: never
