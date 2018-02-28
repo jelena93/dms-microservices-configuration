@@ -19,7 +19,7 @@ spring:
     stream:
       bindings:
         userAddedOutput:
-          destination: userAddedInput
+          destination: userAdded
           contentType: application/json
   rabbitmq:
       host: localhost

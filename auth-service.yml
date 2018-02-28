@@ -28,7 +28,7 @@ spring:
     stream:
       bindings:
         userAddedInput:
-          destination: userAddedInput
+          destination: userAdded
           group: userAddedGroup
 eureka:
   instance:

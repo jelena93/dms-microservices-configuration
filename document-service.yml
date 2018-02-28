@@ -12,6 +12,12 @@ spring:
       port: 5672
       username: guest
       password: guest
+  cloud:
+    stream:
+      bindings:
+        documentDeletedInput:
+          destination: documentDeleted
+          group: documentDeletedGroup
 security:
   oauth2:
     client:

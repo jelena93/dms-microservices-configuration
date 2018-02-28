@@ -23,8 +23,11 @@ spring:
     stream:
       bindings:
         documentAddedOutput:
-          destination: documentAddedInput
+          destination: documentAdded
           contentType: application/json
+        documentDeletedInput:
+          destination: documentDeleted
+          group: documentDeletedGroup
   rabbitmq:
       host: localhost
       port: 5672

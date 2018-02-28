@@ -18,8 +18,8 @@ spring:
   cloud:
     stream:
       bindings:
-        documentDeleteOutput:
-          destination: documentDeleteInput
+        documentDeletedOutput:
+          destination: documentDeleted
           contentType: application/json
   rabbitmq:
       host: localhost
