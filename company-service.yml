@@ -32,7 +32,7 @@ security:
     resource:
       loadBalanced: true
       userInfoUri: http://auth-service/uaa/user
-      preferTokenInfo: false
+#      preferTokenInfo: false
 #  sessions: NEVER
 eureka:
   instance:
