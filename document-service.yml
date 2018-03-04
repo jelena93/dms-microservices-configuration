@@ -20,9 +20,9 @@ spring:
           group: documentDeletedGroup
 security:
   oauth2:
-    client:
-      clientId: document-service
-      clientSecret: document-service-secret
+#    client:
+#      clientId: document-service
+#      clientSecret: document-service-secret
     resource:
       loadBalanced: true
       userInfoUri: http://auth-service/uaa/user
