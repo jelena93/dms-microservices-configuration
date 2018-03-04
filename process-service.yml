@@ -21,6 +21,9 @@ spring:
         documentDeletedOutput:
           destination: documentDeleted
           contentType: application/json
+        documentAddedInput:
+          destination: documentAdded
+          group: documentAddedGroup
   rabbitmq:
       host: localhost
       port: 5672
