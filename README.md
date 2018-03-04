@@ -1,3 +1,3 @@
 # spring-dms-microservices-configuration
 
-Configuration service for spring-dms-microservices project 
+Configuration for spring-dms-microservices project 
