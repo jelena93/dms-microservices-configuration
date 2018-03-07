@@ -13,6 +13,9 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 zuul:
+  ribbon:
+    eager-load:
+      enabled: true
   routes:
     company-service: /api/company/**
     process-service: /api/process/**
