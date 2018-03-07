@@ -30,8 +30,6 @@ spring:
         userAddedInput:
           destination: userAdded
           group: userAddedGroup
-          exchangeType: direct
-#spring.cloud.stream.rabbit.bindings.inputer.consumer.exchangeType=direct
 eureka:
   instance:
       hostname: localhost
