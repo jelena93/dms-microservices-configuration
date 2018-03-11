@@ -22,6 +22,8 @@ zuul:
     document-service: /api/document/**
     descriptor-service: /api/descriptor/**
     auth-service: /api/uaa/**
+  retryable: true
+
 #         path: /uauser/**
 #         url: http://localhost:9999/uaa/user
 #    uaa-service:
@@ -40,3 +42,13 @@ security:
 #      preferTokenInfo: false
 #  security:
 #    sessions: never
+ribbon:
+  eager-load:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
