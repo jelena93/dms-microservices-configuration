@@ -1,6 +1,5 @@
 server:
   port: 8081
-addToDb: true
 spring:
   application:
     name: company-service
