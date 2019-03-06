@@ -33,14 +33,14 @@ spring:
       port: 5672
       username: guest
       password: guest
-security:
-  oauth2:
-    client:
-      clientId: descriptor-service
-      clientSecret: descriptor-service-secret
-    resource:
-      loadBalanced: true
-      userInfoUri: http://auth-service/uaa/user
+#security:
+#  oauth2:
+#    client:
+#      clientId: descriptor-service
+#      clientSecret: descriptor-service-secret
+#    resource:
+#      loadBalanced: true
+#      userInfoUri: http://auth-service/uaa/user
 eureka:
   instance:
       hostname: localhost
