@@ -23,28 +23,16 @@ zuul:
     descriptor-service: /api/descriptor/**
     auth-service: /api/uaa/**
   retryable: true
-#security:
-#  oauth2:
-#    client:
-#      accessTokenUri: http://localhost:9999/uaa/oauth/token
-#      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
-#      clientId: api-gateway
-#      clientSecret: api-gateway-secret
-#    resource:
-#      loadBalanced: true
-#      userInfoUri: http://auth-service/uaa/user
-#  security:
-#    sessions: never
 ribbon:
   eager-load:
     enabled: true
-#hystrix:
-#  command:
-#    default:
-#      execution:
-#        isolation:
-#          strategy: THREAD
-#          thread:
-#            timeoutInMilliseconds: 60000
-#        timeout:
-#          enabled: false
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000
+        timeout:
+          enabled: false

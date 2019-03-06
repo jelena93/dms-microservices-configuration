@@ -15,24 +15,6 @@ spring:
     username: admin
     password: admin
     driver-class-name: com.mysql.jdbc.Driver
-  cloud:
-    stream:
-      bindings:
-        userAddedOutput:
-          destination: userAdded
-          contentType: application/json
-  rabbitmq:
-      host: localhost
-      port: 5672
-      username: guest
-      password: guest
-#security:
-#  oauth2:
-#    resource:
-#      loadBalanced: true
-#      userInfoUri: http://auth-service/uaa/user
-##      preferTokenInfo: false
-##  sessions: NEVER
 eureka:
   instance:
       hostname: localhost
